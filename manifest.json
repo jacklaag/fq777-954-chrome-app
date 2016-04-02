@@ -1,8 +1,8 @@
 {
   "name": "FQ777-954",
-  "description": "Controll the FQ777-954 quadcopter with a Gamepad",
-  "version": "0.1",
-  "manifest_version": 3,
+  "description": "Controll the FQ777-954 quadcopter with a Gamepad - Mode 2",
+  "version": "0.2",
+  "manifest_version": 4,
   "app": {
     "background": {
       "scripts": ["background.js"]
