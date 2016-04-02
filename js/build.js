@@ -202,10 +202,10 @@ if(!!navigator.getGamepads){
 		if(udpBound) {
 			if(navigator.getGamepads()[0]) {
 				var gamepad = navigator.getGamepads()[0];
-				data[1] = Math.floor((applyDeadzone(gamepad.axes[0]) + 1) * 127);
-				data[2] = Math.floor((2 - applyDeadzone(gamepad.axes[1]) + 1) * 127);
-				data[3] = Math.floor((gamepad.buttons[7].value) * 255);
-				data[4] = Math.floor((applyDeadzone(gamepad.axes[2]) + 1) * 127);
+				data[1] = Math.floor((applyDeadzone(gamepad.axes[2]) + 1) * 127);
+				data[2] = Math.floor((2 - applyDeadzone(gamepad.axes[3]) + 1) * 127);
+				data[3] = Math.floor((applyDeadzone(gamepad.axes[1])) * -255);
+				data[4] = Math.floor((applyDeadzone(gamepad.axes[0]) + 1) * 127);
 				data[6] = checksum(data);
 				for(var i=0; i<dataArray.length; ++i) {
 					dataArray[i] = data[i];
