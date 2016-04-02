@@ -13,4 +13,4 @@ How to use:
 
 Know issues:
 * Video stream isn't displayed
-* Controll Layout is unintuitive (button R2, which is axis[7], does controll throttle at the moment)
+* ~~Controll Layout is unintuitive (button R2, which is axis[7], does controll throttle at the moment)~~ (fixed)
